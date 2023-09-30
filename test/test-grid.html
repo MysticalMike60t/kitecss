@@ -20,15 +20,33 @@ h1 {
 }
 h2 {
   border-left: 10px solid #CCC;
-  padding: 0.5em 20px;
+  padding: 0.25em 20px;
   background-color: #EEE;
   font-size: 18px;
+}
+h2 > code > span {
+  color: red;
 }
 .fixture {
   border: 1px solid #489;
   margin-bottom: 16px;
-  min-height: 48px;
+  min-height: 28px;
   background-color: rgba(108,200,220,0.75);
+}
+input {
+  width: fit-content;
+  min-width: 500px;
+  pointer-events: none;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
 }
 </style>
 </head>
@@ -38,78 +56,118 @@ h2 {
 
 <h2>12 fluid grid</h2>
 
+<h2><code>.is-<span>${number}</span>of<span>${number}</span></code> | Example: <code><input value="<div classname='is-4-12'></div>" readonly/></code></h2>
+
+<h2><code>.is-<span>12</span>of<span>12</span></code></h2>
+
 <div class="kite kite--grid">
   <div class="kite__item is-12of12">
-    <div class="fixture">.is-12of12</div>
+    <div class="fixture">1</div>
   </div>
 </div>
+
+<h2 style="margin-top: 0"><code>.is-<span>11</span>of<span>12</span></code></h2>
+
 <div class="kite kite--grid">
   <div class="kite__item is-11of12">
-    <div class="fixture">.is-11of12</div>
+    <div class="fixture">2</div>
   </div>
 </div>
+
+<h2 style="margin-top: 0"><code>.is-<span>10</span>of<span>12</span></code></h2>
+
 <div class="kite kite--grid">
   <div class="kite__item is-10of12">
-    <div class="fixture">.is-10of12</div>
+    <div class="fixture">3</div>
   </div>
 </div>
+
+<h2 style="margin-top: 0"><code>.is-<span>9</span>of<span>12</span></code></h2>
+
 <div class="kite kite--grid">
   <div class="kite__item is-9of12">
-    <div class="fixture">.is-9of12</div>
+    <div class="fixture">4</div>
   </div>
 </div>
+
+<h2 style="margin-top: 0"><code>.is-<span>8</span>of<span>12</span></code></h2>
+
 <div class="kite kite--grid">
   <div class="kite__item is-8of12">
-    <div class="fixture">.is-8of12</div>
+    <div class="fixture">5</div>
   </div>
 </div>
+
+<h2 style="margin-top: 0"><code>.is-<span>7</span>of<span>12</span></code></h2>
+
 <div class="kite kite--grid">
   <div class="kite__item is-7of12">
-    <div class="fixture">.is-7of12</div>
+    <div class="fixture">6</div>
   </div>
 </div>
+
+<h2 style="margin-top: 0"><code>.is-<span>6</span>of<span>12</span></code></h2>
+
 <div class="kite kite--grid">
   <div class="kite__item is-6of12">
-    <div class="fixture">.is-6of12</div>
+    <div class="fixture">7</div>
   </div>
 </div>
+
+<h2 style="margin-top: 0"><code>.is-<span>5</span>of<span>12</span></code></h2>
+
 <div class="kite kite--grid">
   <div class="kite__item is-5of12">
-    <div class="fixture">.is-5of12</div>
+    <div class="fixture">8</div>
   </div>
 </div>
+
+<h2 style="margin-top: 0"><code>.is-<span>4</span>of<span>12</span></code></h2>
+
 <div class="kite kite--grid">
   <div class="kite__item is-4of12">
-    <div class="fixture">.is-4of12</div>
+    <div class="fixture">9</div>
   </div>
 </div>
+
+<h2 style="margin-top: 0"><code>.is-<span>3</span>of<span>12</span></code></h2>
+
 <div class="kite kite--grid">
   <div class="kite__item is-3of12">
-    <div class="fixture">.is-3of12</div>
+    <div class="fixture">10</div>
   </div>
 </div>
+
+<h2 style="margin-top: 0"><code>.is-<span>2</span>of<span>12</span></code></h2>
+
 <div class="kite kite--grid">
   <div class="kite__item is-2of12">
-    <div class="fixture">.is-2of12</div>
+    <div class="fixture">11</div>
   </div>
 </div>
+
+<h2 style="margin-top: 0"><code>.is-<span>1</span>of<span>12</span></code></h2>
+
 <div class="kite kite--grid">
   <div class="kite__item is-1of12">
-    <div class="fixture">.is-1of12</div>
+    <div class="fixture">12</div>
   </div>
 </div>
+
+<h2 style="margin-top: 0">All in one row using <code>`.is-<span>${number}</span>of<span></span>`</code></h2>
+
 <div class="kite kite--grid">
   <div class="kite__item is-1of12">
-    <div class="fixture">.is-1of12</div>
+    <div class="fixture">1</div>
   </div>
   <div class="kite__item is-2of12">
-    <div class="fixture">.is-2of12</div>
+    <div class="fixture">2</div>
   </div>
   <div class="kite__item is-3of12">
-    <div class="fixture">.is-3of12</div>
+    <div class="fixture">3</div>
   </div>
   <div class="kite__item is-6of12">
-    <div class="fixture">.is-6of12</div>
+    <div class="fixture">4</div>
   </div>
 </div>
 
@@ -117,29 +175,29 @@ h2 {
 
 <div class="kite kite--grid has-gutter">
   <div class="kite__item is-4of12">
-    <div class="fixture">.is-4of12</div>
+    <div class="fixture">1</div>
   </div>
   <div class="kite__item is-4of12">
-    <div class="fixture">.is-4of12</div>
+    <div class="fixture">2</div>
   </div>
   <div class="kite__item is-4of12">
-    <div class="fixture">.is-4of12</div>
+    <div class="fixture">3</div>
   </div>
 </div>
 
 <div class="kite kite--grid has-gutter">
   <div class="kite__item is-2of12">
-    <div class="fixture">.is-2of12</div>
+    <div class="fixture">4</div>
   </div>
   <div class="kite__item is-4of12">
-    <div class="fixture">.is-4of12</div>
+    <div class="fixture">5</div>
   </div>
   <div class="kite__item is-6of12">
-    <div class="fixture">.is-6of12</div>
+    <div class="fixture">6</div>
   </div>
 </div>
 
-<h2>Has gutter(Nested)</h2>
+<h2>Has gutter (Nested)</h2>
 
 <div class="kite kite--grid has-gutter">
   <div class="kite__item is-4of12">
@@ -209,7 +267,7 @@ h2 {
     <div class="fixture">6</div>
   </div>
   <div class="kite__item is-3of12">
-    <div class="fixture">7 lorem</div>
+    <div class="fixture">7</div>
   </div>
 </div>
 
